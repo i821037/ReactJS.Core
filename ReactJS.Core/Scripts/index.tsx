@@ -2,11 +2,8 @@
 // for more information see the following page on the TypeScript wiki:
 // https://github.com/Microsoft/TypeScript/wiki/JSX
 
-/// <reference path="../node_modules/@types/react/index.d.ts" />
-/// <reference path="../node_modules/@types/react-dom/index.d.ts" />
-
-//import * as React from 'react';
-//import * as ReactDOM from 'react-dom';
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
 
 class App extends React.Component<any, any> {
     constructor(props : any) {
@@ -17,7 +14,7 @@ class App extends React.Component<any, any> {
     render() {
         return (
             <div>
-                <h1>Hello, World!</h1>
+                <h1 style={{ color: '#333' }}>Hello, World!</h1>
             </div>
         );
     }
